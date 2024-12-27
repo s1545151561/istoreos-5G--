@@ -22,7 +22,7 @@
 
 # 一、简介
 
-该项目从[draco-china/istoreos-actions](https://github.com/draco-china/istoreos-actions)进行定制，添加5G模块官方支持和一些常用插件
+该项目从[draco-china/istoreos-actions]([https://github.com/draco-china/istoreos-actions](https://github.com/s1545151561/istoreos-5G--))进行定制，添加5G模块官方支持和一些常用插件
 
 # 二、源代码地址
 
@@ -101,27 +101,3 @@
 
 - 5G模组拨号脚本：[点击查看](https://github.com/Siriling/istoreos-actions/tree/main/tools/5G%E6%A8%A1%E7%BB%84%E6%8B%A8%E5%8F%B7%E8%84%9A%E6%9C%AC)
 - 5G模组使用教程：[点击查看](https://blog.siriling.com:1212/2023/03/18/openwrt-5g-modem/)
-
-# 五、展示
-
-暂无
-
-
-# 六、鸣谢
-
-- [istoreos](https://github.com/istoreos/istoreos)
-- [P3TERX/Actions-OpenWrt](https://github.com/P3TERX/Actions-OpenWrt)
-- [Microsoft Azure](https://azure.microsoft.com)
-- [GitHub Actions](https://github.com/features/actions)
-- [OpenWrt](https://github.com/openwrt/openwrt)
-- [Lean&#39;s OpenWrt](https://github.com/coolsnowwolf/lede)
-- [tmate](https://github.com/tmate-io/tmate)
-- [mxschmitt/action-tmate](https://github.com/mxschmitt/action-tmate)
-- [csexton/debugger-action](https://github.com/csexton/debugger-action)
-- [Cowtransfer](https://cowtransfer.com)
-- [WeTransfer](https://wetransfer.com/)
-- [Mikubill/transfer](https://github.com/Mikubill/transfer)
-- [softprops/action-gh-release](https://github.com/softprops/action-gh-release)
-- [ActionsRML/delete-workflow-runs](https://github.com/ActionsRML/delete-workflow-runs)
-- [dev-drprasad/delete-older-releases](https://github.com/dev-drprasad/delete-older-releases)
-- [peter-evans/repository-dispatch](https://github.com/peter-evans/repository-dispatch)
