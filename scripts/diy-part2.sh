@@ -168,9 +168,9 @@ cp -rf ../../kiddin9/luci-app-rtbwmon/* luci-app-rtbwmon
 # cp -rf ../../kiddin9/v2ray-plugin/* v2ray-plugin
 # cp -rf ../../kiddin9/trojan/* trojan
 #Passwall和Passwall2
- svn export https://github.com/xiaorouji/openwrt-passwall/trunk openwrt-passwall
+ svn export https://github.com/xiaorouji/openwrt-passwall/tree/main openwrt-passwall
  svn export https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall
- svn export https://github.com/xiaorouji/openwrt-passwall2/trunk/luci-app-passwall2
+ svn export https://github.com/xiaorouji/openwrt-passwall2/tree/main/luci-app-passwall2
 #VSSR（Hello Word）
 # svn export https://github.com/jerrykuku/lua-maxminddb/trunk lua-maxminddb
 # svn export https://github.com/jerrykuku/luci-app-vssr/trunk luci-app-vssr
