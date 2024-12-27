@@ -22,7 +22,7 @@
 
 # 一、简介
 
-该项目从[draco-china/istoreos-actions]([https://github.com/draco-china/istoreos-actions](https://github.com/s1545151561/istoreos-5G--))进行定制，添加5G模块官方支持和一些常用插件
+该项目从[draco-china/istoreos-actions]([https://github.com/s1545151561/istoreos-5G--])进行定制，添加5G模块官方支持和一些常用插件
 
 # 二、源代码地址
 
