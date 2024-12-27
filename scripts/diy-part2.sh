@@ -22,8 +22,12 @@ sed -i 's/192.168.1.1/192.168.61.3/g' package/base-files/files/bin/config_genera
 # ttyd自动登录
 # sed -i "s?/bin/login?/usr/libexec/login.sh?g" ${GITHUB_WORKSPACE}/openwrt/package/feeds/packages/ttyd/files/ttyd.config
 
-# 默认打开WiFi
-sed -i 's/disabled=1/disabled=0/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+# 修改 WiFi 名称
+# sed -i 's/OpenWrt/OpenWrt/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+
+# 默认打开 WiFi
+# sed -i 's/disabled=1/disabled=0/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+
 
 # 移除ddns
  sed -i 's/CONFIG_PACKAGE_ddns-scripts=y/CONFIG_PACKAGE_ddns-scripts=n/' .config
