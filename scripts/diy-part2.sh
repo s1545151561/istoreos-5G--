@@ -237,6 +237,15 @@ sed -i 's/+PACKAGE_$(PKG_NAME)_INCLUDE_binary:adguardhome//' luci-app-adguardhom
 #Zerotier（iStoreOS已有）
 # svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-zerotier
 
+# 在线用户
+git_sparse_clone main https://github.com/haiibo/packages luci-app-onliner
+sed -i '$i uci set nlbwmon.@nlbwmon[0].refresh_interval=2s' package/lean/default-settings/files/zzz-default-settings
+sed -i '$i uci commit nlbwmon' package/lean/default-settings/files/zzz-default-settings
+chmod 755 package/luci-app-onliner/root/usr/share/onliner/setnlbw.sh
+
+./scripts/feeds update -a
+./scripts/feeds install -a
+
 # 其他
 #Socat（iStoreOS已有）
 #svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-socat
@@ -516,3 +525,8 @@ elif [ "$1" = "rk35xx" ]; then
 fi
 
 cat .config
+
+# 为iStoreOS固件版本加上编译作者
+author="你爹呀"
+sed -i "s/DISTRIB_DESCRIPTION.*/DISTRIB_DESCRIPTION='%D %V ${date_version} by ${author}'/g" package/base-files/files/etc/openwrt_release
+sed -i "s/OPENWRT_RELEASE.*/OPENWRT_RELEASE=\"%D %V ${date_version} by ${author}\"/g" package/base-files/files/usr/lib/os-release
